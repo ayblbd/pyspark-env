@@ -7,4 +7,4 @@ sc = SparkContext(conf=conf)
 
 import numpy
 print("Hello World!")
-sc.parallelize(range(1,10)).map(lambda x : numpy.__version__).collect()
+print("Numpy version: ", sc.parallelize(range(1,10)).map(lambda x : numpy.__version__).collect())

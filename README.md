@@ -1,4 +1,6 @@
 # Creating the env
+NOTE: OS of extraction needs to be the same as the target OS
+
 `conda create -y -n pyspark-env python=3.7 numpy pandas scikit-learn` 
 
 May give a file-system error. If so, simply run again. This is due to conda not being initialized
